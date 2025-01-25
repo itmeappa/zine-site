@@ -1,0 +1,103 @@
+#nav-container {
+    position: fixed;
+    top: calc(var(--banner-height) + var(--header-height));
+    height: calc(100vh - var(--banner-height) - var(--header-height));
+}
+
+nav {
+    --nav-bar-width: 100vw;
+    position: fixed;
+    background-color: white;
+    width: var(--nav-bar-width);
+    box-sizing: border-box; 
+    top: calc(var(--banner-height) + var(--header-height));
+    height: 100%;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        --nav-bar-width: 400px;
+    }
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20pt;
+    margin: 0.5em 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#overlay {
+    background-color: black;
+    width: 100%;
+    top: calc(var(--banner-height) + var(--header-height));
+    height: 100%;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+#overlay.open {
+    animation-name: fade-in-overlay;
+}
+
+@keyframes fade-in-overlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.25;
+    }
+}
+
+#overlay.close {
+    animation-name: fade-out-overlay;
+
+}
+
+@keyframes fade-out-overlay {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+nav.close {
+    animation-name: close;
+}
+
+@keyframes close {
+    from {
+        left: 0vw;
+    }
+    to {
+        left: calc(var(--nav-bar-width) * -1);
+    }
+}
+
+nav.open {
+    animation-name: open;
+}
+
+@keyframes open {
+    0% {
+        left: calc(var(--nav-bar-width) * -1);
+    }
+    100% {
+        left: 0vw;
+    }
+}

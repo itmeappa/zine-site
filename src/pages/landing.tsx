@@ -1,7 +1,7 @@
 export const Landing = () => {
     return (
-        <>
-Landing
-        </>
+        <div>
+            Landing
+        </div>
     )
 }

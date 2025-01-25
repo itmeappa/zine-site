@@ -1,0 +1,61 @@
+#header {
+    box-sizing: border-box;
+    height: var(--header-height);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    overflow-y: hidden;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#publicationTitle {
+    font-size: var(--header-font-size);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+#subscribeButton {
+    border-radius: 5%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    margin-right: var(--side-margin);
+    width: fit-content;
+    height: fit-content;
+    justify-self: right;
+    font-size: var(--paragraph-font-size);
+    margin: auto 0;
+    margin-right: var(--side-margin)
+}
+
+#hamburgerContainer {
+    width: fit-content;
+    margin: auto 0;
+    justify-self: left;
+    margin-left: var(--side-margin);
+}
+
+.hamburgerBar1, .hamburgerBar2, .hamburgerBar3 {
+    border-radius: 15%;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .hamburgerBar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+  /* Fade out the second bar */
+.change .hamburgerBar2 {
+    opacity: 0;
+}
+  
+/* Rotate last bar */
+.change .hamburgerBar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}

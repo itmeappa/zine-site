@@ -1,19 +1,35 @@
-/* Base styles for mobile */
-body {
-    font-size: 16px;
-    margin: 0;
+/* Base variables for mobile */
+:root {
+    --banner-height: 4em;
+    --header-height: 4em;
+    --side-margin: 2vw;
+    --header-font-size: 24px;
+    --paragraph-font-size: 16px;
 }
 
 /* Larger screens */
 @media (min-width: 768px) {
-    body {
-    font-size: 18px;
+    :root {
+        --header-font-size: 32px;
+        --paragraph-font-size: 18px;
     }
 }
 
 @media (min-width: 1024px) {
-    body {
-    font-size: 20px;
+    :root {
+        --header-font-size: 40px;
+        --paragraph-font-size: 20px;
     }
 }
-  
+
+/* Destyle button tag */
+button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-size: var(--paragraph-font-size);
+}

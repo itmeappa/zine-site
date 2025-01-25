@@ -5,20 +5,31 @@ import { Landing } from './pages/landing';
 import { Banner } from './components/banner';
 import { Header } from './components/header';
 import { About } from './pages/about';
-
+import { Menu } from './pages/menu';
+import { useState } from 'react';
 
 function App() {
+    const [menuVisible, setMenuVisible] = useState(false);
+    const toggleMenuVisible = () => {
+        setMenuVisible(!menuVisible);
+    }
+
     return (
-        <div id="root">
-            <Banner />
-            <Header />
-            <BrowserRouter>
-            <Routes>
-                <Route index element={<Landing />} />
-                <Route path="about" element={<About />} />
-            </Routes>
-            </BrowserRouter>
-        </div>
+        <>
+            <div id="stackpanel">
+                <Banner />
+                <Header toggleMenuVisible={toggleMenuVisible} />
+                <Menu toggleMenuVisible={toggleMenuVisible} menuVisible={menuVisible} />
+                <div id="pages">
+                    <BrowserRouter>
+                        <Routes>
+                            <Route index element={<Landing />} />
+                            <Route path="about" element={<About />} />
+                        </Routes>
+                    </BrowserRouter>
+                </div>
+            </div>
+        </>
     );
 };
 

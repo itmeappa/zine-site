@@ -1,7 +1,7 @@
 export const About = () => {
     return (
-        <>
-About
-        </>
+        <div>
+            About
+        </div>
     )
 }

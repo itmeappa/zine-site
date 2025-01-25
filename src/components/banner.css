@@ -1,0 +1,13 @@
+#bannerContainer {
+    height: var(--banner-height);
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+#bannerText {
+    padding: 0 var(--side-margin);
+    width: fit-content;
+    text-align: center;
+    width: 100%;
+}

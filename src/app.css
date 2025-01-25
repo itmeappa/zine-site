@@ -1,3 +1,10 @@
-#root {
-    background-color: blue;
+#stackpanel {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+}
+
+#stackpanel > div {
+    width: 100vw;
 }
