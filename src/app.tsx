@@ -7,6 +7,7 @@ import { Header } from './components/header';
 import { About } from './pages/about';
 import { Menu } from './pages/menu';
 import { useState } from 'react';
+import { IssueViewer } from './pages/issue-viewer';
 
 function App() {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -25,6 +26,7 @@ function App() {
                         <Routes>
                             <Route index element={<Landing />} />
                             <Route path="about" element={<About />} />
+                            <Route path="issues/:issueId" element={<IssueViewer />} />
                         </Routes>
                     </BrowserRouter>
                 </div>

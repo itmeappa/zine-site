@@ -27,7 +27,7 @@ export const Menu = (props: MenuProps)  => {
         <div id="nav-container" style={{display: displayState}}>
             <div id="overlay" className={props.menuVisible ? OPEN_CLASS : CLOSE_CLASS} onClick={props.toggleMenuVisible}></div>
             <nav className={props.menuVisible ? OPEN_CLASS : CLOSE_CLASS}>
-                <a href="#">About</a>
+                <a href="about">About</a>
                 <a href="#">Issues</a>
                 <a href="#">Donate</a>
                 <a href="#">Contact</a>

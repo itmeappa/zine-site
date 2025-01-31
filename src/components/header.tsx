@@ -29,9 +29,9 @@ export const Header: React.FC<HeaderProps> = (props) => {
                 <div className="hamburgerBar2"></div>
                 <div className="hamburgerBar3"></div>
             </button>
-            <div id="publicationTitle">
+            <a href="/" id="publicationTitle">
                 PUBLICATION TITLE
-            </div>
+            </a>
             <button id="subscribeButton">
                 Subscribe
             </button>

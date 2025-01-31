@@ -1,0 +1,32 @@
+#landing-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    flex-wrap: wrap;
+    height: unset;
+    padding: 0px 5vw;
+    align-items: center;
+}
+
+#latest-issue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#latest-issue-image {
+    background-color: black;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    #landing-container {
+        height: calc(100vh - var(--banner-height) - var(--header-height) - var(--page-margin-y) * 2);
+    }
+
+    #landing-container > * {
+        margin: 0 5%;
+        height: 100%;
+    }
+}

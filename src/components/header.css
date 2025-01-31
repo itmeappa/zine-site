@@ -6,6 +6,9 @@
     overflow-y: hidden;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    position: fixed;
+    top: var(--banner-height);
+    background-color: white;
 }
 
 #publicationTitle {
@@ -13,6 +16,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: auto;
     text-align: center;
+    text-decoration: none;
+    color: unset
 }
 
 #subscribeButton {
@@ -49,12 +54,12 @@
 .change .hamburgerBar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
-  
+
   /* Fade out the second bar */
 .change .hamburgerBar2 {
     opacity: 0;
 }
-  
+
 /* Rotate last bar */
 .change .hamburgerBar3 {
     transform: translate(0, -11px) rotate(45deg);
