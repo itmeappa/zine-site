@@ -22,7 +22,7 @@
 /* Larger screens */
 @media (min-width: 768px) {
     #landing-container {
-        height: calc(100vh - var(--banner-height) - var(--header-height) - var(--page-margin-y) * 2);
+        height: var(--remaining-page-height);
     }
 
     #landing-container > * {

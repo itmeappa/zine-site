@@ -20,10 +20,11 @@
 
 #pages {
     display: flex;
-    --page-margin-y: 3vw;
     margin-top: calc(var(--page-margin-y) + var(--banner-height) + var(--header-height));
+    justify-content: center;
 }
 
 #pages > div {
-    width: 100%
+    width: 80%;
 }
+

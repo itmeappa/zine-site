@@ -5,6 +5,8 @@
     --side-margin: 2vw;
     --header-font-size: 24px;
     --paragraph-font-size: 16px;
+    --page-margin-y: 3vw;
+    --remaining-page-height: calc(100vh - var(--banner-height) - var(--header-height) - var(--page-margin-y) * 2)
 }
 
 /* Larger screens */

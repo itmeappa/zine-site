@@ -1,0 +1,9 @@
+#issue-viewer-container {
+    display: flex;
+    justify-content: center;
+}
+
+#issue-viewer {
+    display: flex;
+    height: var(--remaining-page-height)
+}

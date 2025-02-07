@@ -26,7 +26,7 @@ function App() {
                         <Routes>
                             <Route index element={<Landing />} />
                             <Route path="about" element={<About />} />
-                            <Route path="issues/:issueId" element={<IssueViewer />} />
+                            <Route path="issues/:issueId/:pageId?" element={<IssueViewer />} />
                         </Routes>
                     </BrowserRouter>
                 </div>
