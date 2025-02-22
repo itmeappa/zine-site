@@ -15,6 +15,22 @@
     height: 100%;
 }
 
+.issue-viewer-container > button {
+    align-self: flex-end;
+    font-size: 4em;
+    border-radius: 100%;
+    align-self: center;
+    width: 3vw;
+
+    /* Align buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Put buttons ahead of IssueViewer */
+    z-index: 1;
+}
+
 /* Larger screens */
 @media (min-width: 1024px) {
     .issue-viewer {

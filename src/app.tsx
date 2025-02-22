@@ -8,6 +8,7 @@ import { About } from './pages/about';
 import { Menu } from './pages/menu';
 import { useState } from 'react';
 import { IssueViewer } from './pages/issue-viewer';
+import { IssueManager } from './pages/issue-manager';
 
 function App() {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -26,7 +27,7 @@ function App() {
                         <Routes>
                             <Route index element={<Landing />} />
                             <Route path="about" element={<About />} />
-                            <Route path="issues/:issueId/:pageId?" element={<IssueViewer />} />
+                            <Route path="issues/:issueId/:pageId?" element={<IssueManager />} />
                         </Routes>
                     </BrowserRouter>
                 </div>
