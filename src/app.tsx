@@ -17,11 +17,11 @@ function App() {
 
     return (
         <>
-            <div id="stackpanel">
+            <div className="stackpanel">
                 <Banner />
                 <Header toggleMenuVisible={toggleMenuVisible} />
                 <Menu toggleMenuVisible={toggleMenuVisible} menuVisible={menuVisible} />
-                <div id="pages">
+                <div className="pages">
                     <BrowserRouter>
                         <Routes>
                             <Route index element={<Landing />} />

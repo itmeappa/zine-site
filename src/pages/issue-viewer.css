@@ -1,9 +1,29 @@
-#issue-viewer-container {
+.issue-viewer-container {
     display: flex;
     justify-content: center;
 }
 
-#issue-viewer {
+.issue-viewer {
     display: flex;
-    height: var(--remaining-page-height)
+    height: unset;
+    width: 80vw;
+}
+
+.issue-viewer > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+    .issue-viewer {
+        width: unset;
+        height: var(--remaining-page-height);
+    }
+
+    /* in Safari 100% width will make margin in between pages */
+    .issue-viewer > img {
+        width: unset;
+    }
 }

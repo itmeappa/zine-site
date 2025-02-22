@@ -1,4 +1,4 @@
-#stackpanel {
+.stackpanel {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -10,7 +10,7 @@
     max-width: 100%;
 }
 
-#stackpanel > div {
+.stackpanel > div {
     /* If the width is 100vw and a vertical scroll bar
     exists, then a horizontal scroll bar appears too.
     This prevents that horizontal scroll bar */
@@ -18,13 +18,13 @@
     max-width: 100%;
 }
 
-#pages {
+.pages {
     display: flex;
     margin-top: calc(var(--page-margin-y) + var(--banner-height) + var(--header-height));
     justify-content: center;
 }
 
-#pages > div {
+.pages > div {
     width: 80%;
 }
 

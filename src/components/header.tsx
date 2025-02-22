@@ -23,16 +23,16 @@ export const Header: React.FC<HeaderProps> = (props) => {
     }
 
     return (
-        <div id="header">
-            <button id="hamburgerContainer" onClick={hamburgerContainerClicked}>
+        <div className="header">
+            <button className="hamburgerContainer" onClick={hamburgerContainerClicked}>
                 <div className="hamburgerBar1"></div>
                 <div className="hamburgerBar2"></div>
                 <div className="hamburgerBar3"></div>
             </button>
-            <a href="/" id="publicationTitle">
+            <a href="/" className="publicationTitle">
                 PUBLICATION TITLE
             </a>
-            <button id="subscribeButton">
+            <button className="subscribeButton">
                 Subscribe
             </button>
         </div>

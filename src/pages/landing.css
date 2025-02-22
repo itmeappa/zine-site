@@ -1,4 +1,4 @@
-#landing-container {
+.landing-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,23 +9,23 @@
     align-items: center;
 }
 
-#latest-issue-container {
+.latest-issue-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#latest-issue-image {
+.latest-issue-image {
     background-color: black;
 }
 
 /* Larger screens */
 @media (min-width: 768px) {
-    #landing-container {
+    .landing-container {
         height: var(--remaining-page-height);
     }
 
-    #landing-container > * {
+    .landing-container > * {
         margin: 0 5%;
         height: 100%;
     }

@@ -24,8 +24,8 @@ export const Menu = (props: MenuProps)  => {
     }, [props.menuVisible]);
 
     return (
-        <div id="nav-container" style={{display: displayState}}>
-            <div id="overlay" className={props.menuVisible ? OPEN_CLASS : CLOSE_CLASS} onClick={props.toggleMenuVisible}></div>
+        <div className="nav-container" style={{display: displayState}}>
+            <div className={`overlay ${props.menuVisible ? OPEN_CLASS : CLOSE_CLASS}`} onClick={props.toggleMenuVisible}></div>
             <nav className={props.menuVisible ? OPEN_CLASS : CLOSE_CLASS}>
                 <a href="about">About</a>
                 <a href="#">Issues</a>

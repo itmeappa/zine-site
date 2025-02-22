@@ -1,4 +1,4 @@
-#bannerContainer {
+.bannerContainer {
     height: var(--banner-height);
     background-color: red;
     display: flex;
@@ -6,7 +6,7 @@
     position: fixed;
 }
 
-#bannerText {
+.bannerText {
     padding: 0 var(--side-margin);
     width: fit-content;
     text-align: center;

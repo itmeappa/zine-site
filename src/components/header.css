@@ -1,4 +1,4 @@
-#header {
+.header {
     box-sizing: border-box;
     height: var(--header-height);
     display: grid;
@@ -11,7 +11,7 @@
     background-color: white;
 }
 
-#publicationTitle {
+.publicationTitle {
     font-size: var(--header-font-size);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: auto;
@@ -20,7 +20,7 @@
     color: unset
 }
 
-#subscribeButton {
+.subscribeButton {
     border-radius: 5%;
     border: 1px solid black;
     margin: 10px;
@@ -34,7 +34,7 @@
     margin-right: var(--side-margin)
 }
 
-#hamburgerContainer {
+.hamburgerContainer {
     width: fit-content;
     margin: auto 0;
     justify-self: left;

@@ -1,4 +1,4 @@
-#nav-container {
+.nav-container {
     position: fixed;
     top: calc(var(--banner-height) + var(--header-height));
     height: calc(100vh - var(--banner-height) - var(--header-height));
@@ -38,7 +38,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#overlay {
+.overlay {
     background-color: black;
     width: 100%;
     top: calc(var(--banner-height) + var(--header-height));
@@ -48,7 +48,7 @@ nav a:hover {
     animation-fill-mode: both;
 }
 
-#overlay.open {
+.overlay.open {
     animation-name: fade-in-overlay;
 }
 
@@ -61,7 +61,7 @@ nav a:hover {
     }
 }
 
-#overlay.close {
+.overlay.close {
     animation-name: fade-out-overlay;
 
 }
