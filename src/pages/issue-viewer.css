@@ -7,6 +7,9 @@
     display: flex;
     height: unset;
     width: 80vw;
+
+    /* Put IssueViewer behind buttons */
+    z-index: -1;
 }
 
 .issue-viewer > img {
@@ -26,9 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Put buttons ahead of IssueViewer */
-    z-index: 1;
 }
 
 /* Larger screens */
