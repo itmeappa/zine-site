@@ -70,6 +70,7 @@ export const IssueViewer = ({isLargeScreen, lastPage, initialPageIndex, issueId}
     const [isLeftButtonDisabled, setLeftButtonDisabled] = useState<boolean>(false);
     const [isRightButtonDisabled, setRightButtonDisabled] = useState<boolean>(false);
 
+    // disable left and right buttons on edge cases
     useEffect(() => {
         window.history.pushState({}, "", `/issues/${issueId}/${pageIndex}`);
 
@@ -80,6 +81,25 @@ export const IssueViewer = ({isLargeScreen, lastPage, initialPageIndex, issueId}
         }
         setRightButtonDisabled(pageIndex >= lastIndex)
     }, [pageIndex]);
+
+    // hook keyboard listeners for left and right
+    const keydownEventListener = (event: KeyboardEvent) => {
+        if (event.key === "ArrowRight") {
+            rightButtonClicked();
+        }
+
+        if (event.key === "ArrowLeft") {
+            leftButtonClicked();
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener("keydown", keydownEventListener)
+        return () => {
+            document.removeEventListener("keydown", keydownEventListener);
+        }   
+    });
+
     
     const issuePageViewerProps: IssuePageViewerProps = {
         pageIndex,
