@@ -1,4 +1,4 @@
-import { LATEST_ISSUE } from "./issue-viewer";
+import { LATEST_ISSUE } from "./issue-manager";
 import "./landing.css";
 
 export const Landing = () => {

@@ -1,0 +1,11 @@
+{
+    "latestIssue": "yyyy-mm-dd",
+    "issues": {
+        "yyyy-mm-dd": {
+            "pages": 12
+        },
+        "1111-22-33": {
+            "pages": 10
+        }
+    }
+}

@@ -1,8 +1,6 @@
 import "./issue-viewer.css";
 import { useEffect, useState } from "react";
 
-export const LATEST_ISSUE = "yyyy-mm-dd" as const;
-
 interface IssuePageViewerProps {
     pageIndex: number;
     setPageIndex: (val: number) => void;

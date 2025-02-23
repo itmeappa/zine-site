@@ -17,6 +17,8 @@
 
 .latest-issue-image {
     background-color: black;
+    object-fit: contain;
+    width: 100%;
 }
 
 /* Larger screens */
